@@ -1,0 +1,75 @@
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#particles-js {
+  height: 100%;
+  background: #0e1d25;
+}
+
+
+.title {
+  font-size: 10vw;
+  color: #fdfff0;
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.sub {
+  font-size: 2vw;
+  color: #4ebeba;
+  font-family: 'Poppins', sans-serif;
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 22%;
+  width: 100vw;
+}
+
+.button {
+  border-radius: 50px;
+  background-color: #fdfff0;
+  border: none;
+  font-family: 'Roboto Slab', serif;
+  color: #0e1d25;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 35px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
